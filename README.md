@@ -1,27 +1,15 @@
-# Academia Spark Text Analytics
-
-## Overview
-
-This project implements large-scale text analytics using **Apache Spark**, providing two parallel implementations based on:
-
-- **RDD (Resilient Distributed Dataset)**
-- **Spark DataFrame API**
-
-The application processes a news text dataset, groups records by year, performs tokenisation and stop-word filtering, and extracts **Top-K keywords per year**.  
-The primary goal of this project is to compare the design, expressiveness, and usability differences between low-level RDD transformations and high-level DataFrame operations in Spark.
-
----
-
 ## Repository Structure
 
+```bash
 Academia-Spark-Text-Analytics/
 ├─ src/
-│ ├─ project2_rdd.py # RDD-based implementation
-│ └─ project2_df.py # DataFrame-based implementation
+│  ├─ project2_rdd.py        # RDD-based implementation
+│  └─ project2_df.py         # DataFrame-based implementation
 ├─ data/
-│ └─ sample_abcnews.txt # Small sample dataset for demonstration
+│  └─ sample_abcnews.txt     # Small sample dataset for demonstration
 ├─ .gitignore
 └─ README.md
+```
 
 ---
 
@@ -43,7 +31,10 @@ A small sample file (`sample_abcnews.txt`) is provided to:
 - Java **8 or later**
 
 Python dependency:
+
+```text
 pyspark
+```
 
 ---
 
@@ -55,7 +46,10 @@ Ensure that Apache Spark is installed and that `spark-submit` is available in yo
 
 ```bash
 spark-submit src/project2_rdd.py data/sample_abcnews.txt
+```
 
 ### DataFrame Implementation
 
+```bash
 spark-submit src/project2_df.py data/sample_abcnews.txt
+```
