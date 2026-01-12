@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Spark output directories
+out/
+out_*/
+*.crc
+
+# Local data (large datasets)
+data/abcnews*.txt
