@@ -56,6 +56,6 @@ Ensure that Apache Spark is installed and that `spark-submit` is available in yo
 ```bash
 spark-submit src/project2_rdd.py data/sample_abcnews.txt
 
-DataFrame Implementation
+### DataFrame Implementation
 
 spark-submit src/project2_df.py data/sample_abcnews.txt
